@@ -40,12 +40,14 @@ app.use(oidc.router);
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/home", (req, res) => {
-  res.send('<h1>Welcome!!</div><a href="/login">Login</a>');
+  res.sendFile(path.join(__dirname, "./public/home.html"));
 });
 
-app.get("/admin", (req, res) => {
-  res.send("Admin page");
+app.get("/admin", oidc.ensureAuthenticated(), (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/admin.html"));
 });
 
 app.get("/admin", oidc.ensureAuthenticated(), (req, res) => {
