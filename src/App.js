@@ -29,6 +29,9 @@ function App() {
                 Resources
               </Typography>
               <Typography variant="h7" color="inherit" className="navbar-item">
+                Available Developers
+              </Typography>
+              <Typography variant="h7" color="inherit" className="navbar-item">
                 Contact Us
               </Typography>
             </div>
