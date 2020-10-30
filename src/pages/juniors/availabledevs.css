@@ -1,6 +1,7 @@
 .developer-container {
   background-color: gainsboro;
   border: solid black 1px;
+  margin: auto 2vw;
 }
 
 .developer-profile {
@@ -8,9 +9,20 @@
   background-color: ghostwhite;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 10px 5px;
   border: solid black 1px;
 }
 
 .dev-title {
   font-weight: bold;
+}
+
+.developerBio {
+  font-style: italic;
+}
+
+.dev-contact-button {
+  background-color: green;
+  color: white;
+  border-radius: 15%;
 }
