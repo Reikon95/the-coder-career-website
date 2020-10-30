@@ -36,7 +36,7 @@ export function AvailableDevs() {
             I enjoy spending my free time helping peopel break into the tech
             industry!
           </div>
-          <div>
+          <div className="button-wrapper-dev">
             <button className="dev-contact-button">Contact</button>
           </div>
         </div>

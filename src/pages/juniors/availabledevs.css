@@ -25,4 +25,10 @@
   background-color: green;
   color: white;
   border-radius: 15%;
+  margin: auto;
+}
+
+.button-wrapper-dev {
+  display: flex;
+  align-items: center;
 }
