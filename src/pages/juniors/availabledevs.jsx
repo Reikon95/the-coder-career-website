@@ -1,6 +1,18 @@
 import React from "react";
 import "./availabledevs.css";
 export function AvailableDevs() {
+  let developers = [
+    {
+      id: 1,
+      name: "Cam",
+      remote: "Yes",
+      tech: ["React", "Angular", "Typescript", "Python"],
+      languages: { English: "Fluent", Spanish: "Basic" },
+      bio:
+        "I'm an ex-technical recuriter who retrained as a software engineer. I enjoy spending my free time helping peopel break into the tech",
+    },
+  ];
+
   return (
     <>
       <h2>Find a Developer!</h2>
@@ -11,7 +23,7 @@ export function AvailableDevs() {
         Please note, we do not add pictures or current salary in order to combat
         bias in a recruitment process.
       </p>
-      <div class="developer-container">
+      <div className="developer-container">
         <div className="developer-profile">
           <div className="dev-title">Name: Cam</div>
           <div>Location: London</div>
@@ -23,6 +35,9 @@ export function AvailableDevs() {
             I'm an ex-technical recuriter who retrained as a software engineer.
             I enjoy spending my free time helping peopel break into the tech
             industry!
+          </div>
+          <div>
+            <button className="dev-contact-button">Contact</button>
           </div>
         </div>
         <div className="developer-profile">item</div>
