@@ -1,0 +1,16 @@
+.developer-container {
+  background-color: gainsboro;
+  border: solid black 1px;
+}
+
+.developer-profile {
+  height: 200px;
+  background-color: ghostwhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid black 1px;
+}
+
+.dev-title {
+  font-weight: bold;
+}

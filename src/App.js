@@ -1,45 +1,37 @@
-import "./App.css";
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-// import IconButton from "@material-ui/core/IconButton";
-// import MenuIcon from "@material-ui/icons/Menu";
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HomePage } from "./pages/home/home";
+import { AvailableDevs } from "./pages/juniors/availabledevs";
+import { AboutUs } from "./pages/about/aboutus";
+export default function App() {
   return (
-    <div className="App">
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <div className="navbar-wrapper">
-            <Typography
-              variant="h5"
-              color="inherit"
-              className="navbar-home-link"
-            >
-              The Coder Career
-            </Typography>
-            <div className="navbar-endpoint-group">
-              <Typography variant="h7" color="inherit" className="navbar-item">
-                Blog Posts
-              </Typography>
-              <Typography variant="h7" color="inherit" className="navbar-item">
-                Write for us!
-              </Typography>
-              <Typography variant="h7" color="inherit" className="navbar-item">
-                Resources
-              </Typography>
-              <Typography variant="h7" color="inherit" className="navbar-item">
-                Available Developers
-              </Typography>
-              <Typography variant="h7" color="inherit" className="navbar-item">
-                Contact Us
-              </Typography>
-            </div>
-          </div>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Homepage</Link>
+            </li>
+            <li>
+              <Link to="/aboutus">About Us</Link>
+            </li>
+            <li>
+              <Link to="/AvailableDevs">Available Devs</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/aboutus">
+            <AboutUs />
+          </Route>
+          <Route path="/AvailableDevs">
+            <AvailableDevs />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
