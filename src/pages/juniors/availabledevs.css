@@ -22,13 +22,19 @@
 }
 
 .dev-contact-button {
-  background-color: green;
+  background-color: #5cb85c;
   color: white;
-  border-radius: 15%;
+  border-radius: 8%;
   margin: auto;
+  margin-top: 3%;
+  height: 30px;
 }
 
 .button-wrapper-dev {
   display: flex;
   align-items: center;
+}
+
+.find-a-dev-title {
+  text-align: center;
 }
