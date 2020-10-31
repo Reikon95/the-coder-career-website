@@ -41,9 +41,10 @@ export function AvailableDevs() {
 
   return (
     <>
-      <h2>Find a Developer!</h2>
-      <h6>Want to be featured? (it's free!)</h6>
-      <button>List Your Profile</button>
+      <h2 className="find-a-dev-title">Find a Developer!</h2>
+      <h6 className="find-a-dev-title">
+        Want to be featured? (it's free!) <button>List Your Profile</button>
+      </h6>
       <p>
         Feel free to contact any developer on this page with interview requests!
         Please note, we do not add pictures or current salary in order to combat

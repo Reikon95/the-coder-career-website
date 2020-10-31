@@ -27,10 +27,14 @@
   border-radius: 8%;
   margin: auto;
   margin-top: 3%;
-  height: 30px; 
+  height: 30px;
 }
 
 .button-wrapper-dev {
   display: flex;
   align-items: center;
+}
+
+.find-a-dev-title {
+  text-align: center;
 }
