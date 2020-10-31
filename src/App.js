@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HomePage } from "./pages/home/home";
 import { AvailableDevs } from "./pages/juniors/availabledevs";
 import { AboutUs } from "./pages/about/aboutus";
+import "./App.css";
 export default function App() {
   useEffect(() => {
     console.log(
@@ -13,16 +14,22 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Homepage</Link>
+        <nav className="parent-navbar">
+          <ul className="navbar-list">
+            <li className="navbar-link navbar-link-home">
+              <Link to="/" className="navbar-link navbar-link-home">
+                The Coder Career
+              </Link>
             </li>
             <li>
-              <Link to="/aboutus">About Us</Link>
+              <Link to="/aboutus" className="navbar-link">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="/AvailableDevs">Available Devs</Link>
+              <Link to="/AvailableDevs" className="navbar-link">
+                Available Devs
+              </Link>
             </li>
           </ul>
         </nav>

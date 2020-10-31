@@ -1,21 +1,25 @@
-.navbar-wrapper {
-  display: flex;
-  width: 100vw;
-}
-.navbar-endpoint-group {
-  justify-content: flex-end;
-}
-.navbar-home-link {
-  padding-right: 5vw;
-  cursor: pointer;
-  justify-content: space-between;
-}
-
-.navbar-item {
-  padding: 0 2vw;
-  cursor: pointer;
-}
-
 .App {
   text-align: center;
+}
+
+.parent-navbar {
+  background-color: blueviolet;
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link {
+  margin: auto 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link-home {
+  margin: 0 25px 0 0;
 }
