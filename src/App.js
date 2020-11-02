@@ -23,12 +23,22 @@ export default function App() {
             </li>
             <li>
               <Link to="/aboutus" className="navbar-link">
-                About Us
+                About
               </Link>
             </li>
             <li>
               <Link to="/AvailableDevs" className="navbar-link">
                 Available Devs
+              </Link>
+            </li>
+            <li>
+              <Link to="/jobs" className="navbar-link">
+                Jobs
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact-us" className="navbar-link">
+                Contact Us
               </Link>
             </li>
           </ul>
