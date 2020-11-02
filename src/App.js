@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HomePage } from "./pages/home/home";
 import { AvailableDevs } from "./pages/juniors/availabledevs";
+import { Jobs } from "./pages/jobs/jobs";
 import { AboutUs } from "./pages/about/aboutus";
 import "./App.css";
 export default function App() {
@@ -32,7 +33,7 @@ export default function App() {
               </Link>
             </li>
             <li>
-              <Link to="/jobs" className="navbar-link">
+              <Link to="/Jobs" className="navbar-link">
                 Jobs
               </Link>
             </li>
@@ -49,6 +50,9 @@ export default function App() {
           </Route>
           <Route path="/AvailableDevs">
             <AvailableDevs />
+          </Route>
+          <Route path="/Jobs">
+            <Jobs />
           </Route>
           <Route path="/">
             <HomePage />
