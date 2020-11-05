@@ -15,6 +15,11 @@ export function Jobs() {
       name: "Google",
       companyBio: "Search engines and that",
       jobTitle: "Senior Front End Developer",
+      remote: true,
+      category: "Senior",
+      city: "London",
+      country: "UK",
+      tech: ["Angular, Typescript, Stencil, Vue"],
     },
   ];
 
@@ -35,17 +40,22 @@ export function Jobs() {
           return (
             <div className="developer-profile">
               <div className="dev-title">Name: {job.name}</div>
-              {/* <div>Location: {dev.city + ", " + dev.country}</div> */}
-              {/* <div>Remote: {dev.remote}</div> */}
-              {/* <div>
+              <div>
+                Location:{" "}
+                {job.remote ? (
+                  <>Remote!</>
+                ) : (
+                  <>{job.city + ", " + job.country}</>
+                )}
+              </div>
+              <div>
                 Tech:{" "}
-                {dev.tech.map((tech) => {
+                {job.tech.map((tech) => {
                   return <>{tech + ", "}</>;
                 })}
-              </div> */}
-              {/* <div>Years of experience: {dev.yearsXP}</div>
-              <div>Languages: English (Fluent), Spanish (Basic)</div>
-              <div className="developerBio">{dev.bio}</div> */}
+              </div>
+              <div>Job category: {job.category}</div>
+              <div className="jobBio">{job.companyBio}</div>
               <div className="button-wrapper-dev">
                 <button className="dev-contact-button">Apply</button>
               </div>
