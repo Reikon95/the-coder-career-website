@@ -35,6 +35,12 @@ export function Jobs() {
         opportunities are vetted by our team to ensure they are a quality
         employer.
       </p>
+      <div>
+        <h5>Filter</h5>
+        <p>Country: </p>
+        <p>City: </p>
+        <p>Remote Only</p>
+      </div>
       <div className="developer-container">
         {jobs.map((job, index) => {
           return (
