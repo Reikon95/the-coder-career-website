@@ -9,6 +9,20 @@ export function Jobs() {
     tech: [],
   });
 
+  let jobs = [
+    {
+      id: "000001",
+      name: "Google",
+      companyBio: "Search engines and that",
+      jobTitle: "Senior Front End Developer",
+      remote: true,
+      category: "Senior",
+      city: "London",
+      country: "UK",
+      tech: ["Angular, Typescript, Stencil, Vue"],
+    },
+  ];
+
   return (
     <>
       <h2>Jobs</h2>
@@ -21,6 +35,40 @@ export function Jobs() {
         opportunities are vetted by our team to ensure they are a quality
         employer.
       </p>
+      <div>
+        <h5>Filter</h5>
+        <p>Country: </p>
+        <p>City: </p>
+        <p>Remote Only</p>
+      </div>
+      <div className="developer-container">
+        {jobs.map((job, index) => {
+          return (
+            <div className="developer-profile">
+              <div className="dev-title">Name: {job.name}</div>
+              <div>
+                Location:{" "}
+                {job.remote ? (
+                  <>Remote!</>
+                ) : (
+                  <>{job.city + ", " + job.country}</>
+                )}
+              </div>
+              <div>
+                Tech:{" "}
+                {job.tech.map((tech) => {
+                  return <>{tech + ", "}</>;
+                })}
+              </div>
+              <div>Job category: {job.category}</div>
+              <div className="jobBio">{job.companyBio}</div>
+              <div className="button-wrapper-dev">
+                <button className="dev-contact-button">Apply</button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
