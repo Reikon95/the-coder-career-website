@@ -27,3 +27,20 @@
 .global-header {
   text-align: center;
 }
+
+.flexbox {
+  display: flex;
+}
+
+.full-width-flexbox {
+  width: 100%;
+  display: flex;
+}
+
+.tcc-red {
+  color: red;
+}
+
+.tcc-blue {
+  color: blue
+}

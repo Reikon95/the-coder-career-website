@@ -25,7 +25,7 @@ export function Jobs() {
 
   return (
     <>
-      <h2>Jobs</h2>
+      <h2 className="global-header">Jobs</h2>
       <h6>
         Want to advertise a job? It's free for a limited time!{" "}
         <button>Add Your Job</button>
