@@ -41,8 +41,8 @@ export function AvailableDevs() {
 
   return (
     <>
-      <h2 className="find-a-dev-title">Find a Developer!</h2>
-      <h6 className="find-a-dev-title">
+      <h2 className="find-a-dev-title global-header">Find a Developer!</h2>
+      <h6 className="find-a-dev-title global-header">
         Want to be featured? (it's free!) <button>List Your Profile</button>
       </h6>
       <p>
