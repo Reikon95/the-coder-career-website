@@ -4,6 +4,7 @@ import { HomePage } from "./pages/home/home";
 import { AvailableDevs } from "./pages/juniors/availabledevs";
 import { Jobs } from "./pages/jobs/jobs";
 import { AboutUs } from "./pages/about/aboutus";
+import {ContactUs} from "./pages/contact/contact"
 import "./App.css";
 export default function App() {
   useEffect(() => {
@@ -50,6 +51,9 @@ export default function App() {
           </Route>
           <Route path="/AvailableDevs">
             <AvailableDevs />
+          </Route>
+          <Route path="/contact-us">
+            <ContactUs />
           </Route>
           <Route path="/Jobs">
             <Jobs />
