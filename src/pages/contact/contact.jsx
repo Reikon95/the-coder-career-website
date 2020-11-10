@@ -10,14 +10,15 @@ export function ContactUs() {
       <form onSubmit={handleSubmit(onSubmit)} className="contact-form-container">
         Name
       <input
+        className="contact-form-item"
         name="name"
         ref={register({
-          required: "Required"
         })}
       />
       {errors.name && errors.name.message}
       Company (optional)
       <input
+       className="contact-form-item"
         name="company"
         ref={register({
         })}
@@ -25,9 +26,9 @@ export function ContactUs() {
       {errors.company && errors.company.message}
       Email
       <input
+        className="contact-form-item"
         name="email"
         ref={register({
-          required: "Required",
           pattern: {
             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
             message: "invalid email address"
@@ -37,9 +38,9 @@ export function ContactUs() {
       {errors.email && errors.email.message}
       Confirm Email
       <input
+        className="contact-form-item"
         name="confirmEmail"
         ref={register({
-          required: "Required",
           pattern: {
             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
             message: "invalid confirmEmail address"
@@ -48,7 +49,9 @@ export function ContactUs() {
       />
       {errors.confirmEmail && errors.confirmEmail.message}
       Message
-      <textarea name="contactMessage" ref={register({required: "Required"})}></textarea>
+      <textarea name="contactMessage" ref={register({})}         
+      className="contact-form-item"
+></textarea>
       {errors.contactMessage && errors.contactMessage.message}
 
       <button type="submit">Submit</button>
