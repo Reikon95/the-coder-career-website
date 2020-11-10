@@ -5,7 +5,7 @@ export function Jobs() {
   const [filters, setFilters] = useState({
     locations: [],
     remoteOnly: true,
-    years: "all",
+    categories: []
     tech: [],
   });
 
@@ -33,13 +33,15 @@ export function Jobs() {
       <p>
         Browse opportunities currently advertised on The Coder Career. All
         opportunities are vetted by our team to ensure they are a quality
-        employer.
+        employer. Check out the guide on how to use the page here.
       </p>
       <div>
         <h5>Filter</h5>
         <p>Country: </p>
         <p>City: </p>
+        <p>Experience level:</p>
         <p>Remote Only</p>
+        <p>Tech:</p>
       </div>
       <div className="developer-container">
         {jobs.map((job, index) => {
