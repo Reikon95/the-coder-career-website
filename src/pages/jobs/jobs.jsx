@@ -5,7 +5,7 @@ export function Jobs() {
   const [filters, setFilters] = useState({
     locations: [],
     remoteOnly: true,
-    categories: []
+    categories: [],
     tech: [],
   });
 
