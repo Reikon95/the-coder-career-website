@@ -1,0 +1,6 @@
+.contact-form-container {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
